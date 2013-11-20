@@ -1,4 +1,9 @@
+body{
+	background-color:#b0b7be;
+}
+
 /* Customize container */
   .container {
-    max-width: 980px;
+    max-width: 990px;
+    background-color:#fff;
   }

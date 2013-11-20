@@ -4,16 +4,21 @@
 		<title>Car Info</title>
 		
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
-		<link href="//netdna.bootstrapcdn.com/bootswatch/3.0.1/united/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/bootswatch/3.0.1/flatly/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 		<link href="../css/base_style.css" rel="stylesheet">
 	</head>
 	<body>
+		
 		<div class="container">
+			<div class="page-header">
+				<h1>AutoTrader.com</h1>
+			</div>
 			<h2>Get Direct Dealer Offers</h2>
 			<p class="lead text-warning">Submit your information here to get real quotes, directly from dealers.</p>
 			<hr/>			
-			<form  role="form">
-				<h4>Contact Info</h4>
+			<form  role="form" action="cust_request_success.html" action="post">
+				<h4><i class="fa fa-user fa-lg"></i> Contact Info</h4>
 				<div class="row">
 					<div class="col-md-2">
 						<div class="form-group">
@@ -68,7 +73,7 @@
 				</div>
 				
 				<hr/>
-				<h4>I'm looking for</h4>
+				<h4><i class="fa fa-search fa-lg"></i> I'm looking for</h4>
 				<div class="row">
 					<div class="col-md-2">
 						<div class="form-group">			
@@ -102,7 +107,8 @@
 					</div>
 				</div>
 				<hr/>
-				<h4><input type="checkbox"/> I have a trade in:</h4>
+				<h4><i class="fa fa-money fa-lg"></i>  <input type="checkbox"/> I have a trade in:</h4>
+				<p class="help-block">Example block-level help text here.</p>
 				<div class="row">
 					<div class="col-md-2">
 						<div class="form-group">			
@@ -136,21 +142,13 @@
 					</div>
 				</div>
 				<hr/>
-				<div class="form-group">
-					<label class="sr-only" for="exampleInputEmail2">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-				</div>
-				<div class="form-group">
-					<label class="sr-only" for="exampleInputPassword2">Password</label>
-					<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
-				</div>
-				<div class="checkbox">
-					<label>
-						<input type="checkbox"> Remember me
-					</label>
-				</div>
-				<button type="submit" class="btn btn-default">Sign in</button>
+				
+				<button type="submit" class="btn btn-warning">Get Quotes</button>
+				<p class="help-block">*Dealers will provide quotes on vehicles matching your request within the next 24 hours. (SLA here?) </p>
 			</form>
+			<div class="row">
+				<div class="col-md-4">&nbsp;</div>
+			</div>
 		</div>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>	
